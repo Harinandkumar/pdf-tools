@@ -1,0 +1,20 @@
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8">
+  <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">PDF Resizer</h2>
+  <form action="/resizer/upload" method="POST" enctype="multipart/form-data" class="flex flex-col gap-4">
+    <label class="font-medium text-gray-700">Select PDF File:</label>
+    <input type="file" name="pdf" accept="application/pdf" required
+           class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+    <label class="font-medium text-gray-700">Select Target Size:</label>
+    <select name="target" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="a4">A4</option>
+      <option value="a5">A5</option>
+      <option value="letter">Letter</option>
+      <option value="legal">Legal</option>
+    </select>
+
+    <button type="submit" class="bg-blue-500 text-white font-semibold py-2 rounded hover:bg-blue-600 transition">
+      Resize PDF
+    </button>
+  </form>
+</div>

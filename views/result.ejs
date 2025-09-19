@@ -1,0 +1,24 @@
+<div class="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+  <% if (success) { %>
+    <div class="bg-white shadow-lg rounded-xl p-8 max-w-md w-full text-center">
+      <h2 class="text-2xl font-bold text-green-600 mb-4"><%= message %></h2>
+      <a href="<%= download %>" download
+         class="inline-block mt-4 bg-blue-500 text-white font-semibold px-6 py-2 rounded hover:bg-blue-600 transition">
+        Download Resized PDF
+      </a>
+      <a href="/resizer"
+         class="inline-block mt-4 text-gray-600 hover:text-gray-800 transition text-sm">
+        Resize another PDF
+      </a>
+    </div>
+  <% } else { %>
+    <div class="bg-white shadow-lg rounded-xl p-8 max-w-md w-full text-center">
+      <h2 class="text-2xl font-bold text-red-600 mb-4">Error</h2>
+      <pre class="text-left bg-gray-100 p-4 rounded text-sm overflow-x-auto"><%= error %></pre>
+      <a href="/resizer"
+         class="inline-block mt-4 text-gray-600 hover:text-gray-800 transition text-sm">
+        Try Again
+      </a>
+    </div>
+  <% } %>
+</div>

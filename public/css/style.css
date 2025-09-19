@@ -1,0 +1,5 @@
+body { font-family: sans-serif; background:#f9f9f9; margin:0; }
+header, footer { background:#333; color:#fff; padding:10px; text-align:center; }
+header a { color:#fff; margin:0 10px; text-decoration:none; }
+main { padding:20px; max-width:700px; margin:auto; background:#fff; }
+button { padding:8px 14px; border:none; background:#007bff; color:#fff; border-radius:4px; cursor:pointer; }

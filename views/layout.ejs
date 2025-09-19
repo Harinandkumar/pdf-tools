@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Tools Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="/" class="text-2xl font-bold">PDF Tools Hub</a>
+      <div class="space-x-4">
+        <a href="/resizer" class="hover:underline">PDF Resizer</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1 container mx-auto w-full px-4 py-8">
+    <%- body %>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    &copy; 2025 PDF Tools Hub
+  </footer>
+
+</body>
+</html>
